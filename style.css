@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+
+@font-face {
+    font-family: 'demon slayer';
+    src: url(/fonts/bloodcrow.ttf);
+}
+
 .bg {
     background-image: url(https://i.pinimg.com/originals/c8/b1/1c/c8b11c446064c2764c34a464734b9992.jpg);
     background-position: center;
@@ -16,27 +22,29 @@
 }
 
 .heading {
-    font-family: 'Revalia', sans-serif;
+    font-family: 'demon slayer';
     position: absolute;
-    z-index: 2;
+    z-index: 9;
     top: 2%;
     left: 5%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     transition: 0.3s;
     display: flex;
     gap: 2rem;
 }
-#form{
+
+#form {
     padding: 0.6rem;
     border-radius: 1.5rem;
     border: 1px solid #33273F;
     width: 14rem;
     font-family: 'Open Sans', sans-serif;
-    
+
 
 }
-#form::placeholder{
+
+#form::placeholder {
     color: #33273F;
 }
 
@@ -52,7 +60,7 @@
 
 .side {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 2%;
     left: 50%;
     color: white;
@@ -71,17 +79,19 @@ ul li:hover {
     color: #EF7346;
 
 }
-li{
+
+li {
     transition: 0.3s;
 
 }
+
 ul {
     list-style: none;
-    font-family: 'Audiowide', sans-serif;
+    font-family: 'demon slayer';
     font-size: 1.4rem;
     display: flex;
     gap: 2rem;
-    
+
 }
 
 /* Main Page */
@@ -89,7 +99,7 @@ ul {
 .hero {
     background-image: url("./images/hero1.png");
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     width: 64vw;
     height: 70vh;
     top: 30%;
@@ -99,21 +109,137 @@ ul {
     background-size: cover;
 }
 
-.right-txt{
+.right-txt {
     position: absolute;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'demon slayer';
     top: 40%;
     right: 4%;
-    z-index: 4;
+    z-index: 5;
     font-size: 2.7rem;
     color: white;
     font-weight: 800;
     transition: 0.2s ease-in;
 }
 
-.right-txt:hover{
+.right-txt:hover {
     right: 2%;
     font-size: 2.9rem;
     transform: translateY(-0.5rem);
     transform: translateX(-0.5rem);
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.main-bg {
+    position: relative;
+    top: 10px;
+    background-image: url(./images/mainBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    filter: blur(7px);
+
+}
+
+.glass {
+    display: flex;
+    height: 100vh;
+    width: 30%;
+    top: 100%;
+    z-index: 6;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(5deg, rgba(255, 255, 255, 1) 0%, rgba(229, 151, 97, 1) 100%);
+}
+
+.glass-txt {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    font-family: 'demon slayer', sans-serif;
+    color: black;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+
+
+.card-container {
+    /* width: 50vw; */
+    position: absolute;
+    left: 5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 1rem;
+    z-index: 7;
+}
+
+
+.card img {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    width: 20vw;
+    border-radius: 25px;
+}
+
+
+
+.card {
+    height: 80%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    gap: 1rem;
+    font-family: open sans;
+    transition: 0.3s ease-in;
+
+}
+
+.card:hover {
+    transform: translateY(-1.5rem);
+}
+
+/* .card h1 {} */
+
+.c1 {
+    height: 60%;
+    width: 20vw;
+    padding: 1.3rem;
+    color: black;
+    box-shadow: 50px 50px 200px black inset ,  50px 50px 200px black;
+    background-color: #ffffff;
+    background-image: linear-gradient(220deg, #ffffff 0%, #F7CE68 100%);
+
+}
+
+.c2 {
+    height: 60%;
+    width: 20vw;
+    padding: 1.3rem;
+    box-shadow: 50px 50px 200px rgb(52, 167, 81) inset , 50px 50px 200px rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(265deg, rgba(255, 255, 255, 1) 0%, rgba(108, 162, 138, 1) 100%);
+}
+
+.c3 {
+    padding: 1.3rem;
+    height: 60%;
+    box-shadow: 50px 50px 200px black , 50px 50px 200px black;
+    width: 20vw;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(265deg, rgba(255, 255, 255, 1) 0%, rgba(97, 115, 94, 1) 100%);
 }
